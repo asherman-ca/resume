@@ -1,0 +1,15 @@
+.resume-list-item .details {
+	animation: fadeIn linear 1s;
+	position: relative;
+}
+
+@keyframes fadeIn {
+	0% {
+		left: 25px;
+		opacity: 0;
+	}
+	100% {
+		left: 0px;
+		opacity: 1;
+	}
+}
