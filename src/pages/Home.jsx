@@ -19,13 +19,15 @@ const Home = () => {
 					onClick={() => setShowExperience(!showExperience)}
 					className='title'
 				>
-					<i
-						className={
-							showExperience
-								? 'fa-solid fa-chevron-down'
-								: 'fa-solid fa-chevron-right'
-						}
-					/>
+					<div className='icon-container'>
+						<i
+							className={
+								showExperience
+									? 'fa-solid fa-chevron-down'
+									: 'fa-solid fa-chevron-right'
+							}
+						/>
+					</div>
 					Experience
 				</span>
 				<div className='list item-list'>
@@ -42,13 +44,15 @@ const Home = () => {
 			</div>
 			<div className='section'>
 				<span onClick={() => setShowProjects(!showProjects)} className='title'>
-					<i
-						className={
-							showProjects
-								? 'fa-solid fa-chevron-down'
-								: 'fa-solid fa-chevron-right'
-						}
-					/>
+					<div className='icon-container'>
+						<i
+							className={
+								showProjects
+									? 'fa-solid fa-chevron-down'
+									: 'fa-solid fa-chevron-right'
+							}
+						/>
+					</div>
 					Projects
 				</span>
 				<div className='list'>

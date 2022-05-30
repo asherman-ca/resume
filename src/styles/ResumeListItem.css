@@ -1,5 +1,5 @@
 .resume-list-item {
-	/* font-size: 1rem; */
+	position: relative;
 }
 
 .resume-list-item .header {
