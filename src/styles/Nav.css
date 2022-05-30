@@ -3,7 +3,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 80px;
+	min-height: 80px;
+	/* height: calc(80px + 1rem); */
 
 	width: 90%;
 	max-width: 900px;
@@ -32,16 +33,17 @@
 
 .nav-container .links {
 	display: flex;
-	gap: 2rem;
+	gap: 1rem;
 	color: var(--clr-blk-button);
 }
 
 .nav-container i {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .tooltip-text {
 	position: absolute;
+	/* top: calc(80px + 1rem); */
 	top: 80px;
 	right: 0;
 
@@ -59,7 +61,7 @@
 }
 
 .tooltip:hover .tooltip-text {
-	animation: tooltipFadeIn ease 0.5s;
+	animation: tooltipFadeIn ease 0.25s;
 }
 
 .tooltip:hover .tooltip-text {

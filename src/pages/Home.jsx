@@ -5,11 +5,10 @@ import { resumeData } from '../data/resume';
 const Home = () => {
 	const [resume, setResume] = useState([]);
 	const [showExperience, setShowExperience] = useState(true);
-	const [showProjects, setShowProjects] = useState(true);
+	const [showProjects, setShowProjects] = useState(false);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		console.log('data', resumeData);
 		setResume(resumeData);
 		setLoading(false);
 	}, [resumeData]);
@@ -18,11 +17,17 @@ const Home = () => {
 		return <div>loading</div>;
 	}
 
+	const onShowExperience = () => {
+		setShowExperience(!showExperience);
+		setShowProjects(!showProjects);
+	};
+
 	return (
 		<div className='home-container'>
 			<div className='section'>
 				<span
-					onClick={() => setShowExperience(!showExperience)}
+					// onClick={() => setShowExperience(!showExperience)}
+					onClick={() => onShowExperience()}
 					className='title'
 				>
 					<div className='icon-container'>
@@ -49,7 +54,11 @@ const Home = () => {
 				</div>
 			</div>
 			<div className='section'>
-				<span onClick={() => setShowProjects(!showProjects)} className='title'>
+				<span
+					// onClick={() => setShowProjects(!showProjects)}
+					onClick={() => onShowExperience()}
+					className='title'
+				>
 					<div className='icon-container'>
 						<i
 							className={

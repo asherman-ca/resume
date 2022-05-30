@@ -21,7 +21,12 @@ const ResumeListItem = ({ item, itemShow }) => {
 			{show && (
 				<div className='details'>
 					{item.details.map((detail) => {
-						return <div>{detail}</div>;
+						return (
+							<div className='details-item'>
+								<div>-&nbsp;</div>
+								<div>{detail}</div>
+							</div>
+						);
 					})}
 				</div>
 			)}

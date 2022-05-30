@@ -44,7 +44,7 @@ body {
 
 @keyframes tooltipFadeIn {
 	0% {
-		right: -25px;
+		right: -20px;
 		opacity: 0;
 	}
 	100% {

@@ -30,7 +30,12 @@
 	margin-top: 0.5rem;
 	position: relative;
 
-	animation: fadeIn ease 0.5s;
+	animation: fadeIn ease 0.25s;
+}
+
+.resume-list-item .details-item {
+	display: flex;
+	line-height: 1.5rem;
 }
 
 @keyframes fadeIn {
