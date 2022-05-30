@@ -11,7 +11,9 @@ const ResumeListItem = ({ item, itemShow }) => {
 		<div className='resume-list-item'>
 			<div className='header'>
 				<span className='title'>{item.title.product}&nbsp;</span>
-				<span className='detail'>- {item.title.detail}</span>
+				{item.title.detail && (
+					<span className='detail'>- {item.title.detail}</span>
+				)}
 				{item.title.link && (
 					<a target='_blank' rel='noopener noreferrer' href={item.title.link}>
 						&nbsp;- <i className='fa-solid fa-arrow-up-right-from-square'></i>

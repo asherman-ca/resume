@@ -32,7 +32,13 @@ const Nav = () => {
 					</span>
 				</div>
 				<div className='tooltip'>
-					<i className='fa-solid fa-square-envelope'></i>
+					<a
+						target='_blank'
+						rel='noopener noreferrer'
+						href='mailto: asherman.ca@gmail.com'
+					>
+						<i className='fa-solid fa-square-envelope'></i>
+					</a>
 					<span className='tooltip-text'>asherman.ca@gmail.com</span>
 				</div>
 				<div className='tooltip'>

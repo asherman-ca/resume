@@ -28,14 +28,23 @@ export const resumeData = {
 	],
 	projects: [
 		{
-			title: { product: 'Tickr', detail: 'React, Firebase', link: '' },
-			details: ['Calculated unrealized PNL using profitability algorithm'],
+			title: {
+				product: 'Tickr',
+				detail: 'React, Firebase',
+				link: 'https://coin-ticker.vercel.app/',
+			},
+			details: [
+				'Integrated CoinGecko API and Trading view component',
+				'Handrolled responsive ui components using pure css',
+				'Provided live data using fetch interval',
+				'Calculated PNL stats using order history',
+			],
 		},
 		{
 			title: {
 				product: 'Miyagi',
 				detail: 'React, Firebase, Bootstrap',
-				link: '',
+				link: 'https://miyagi.tech/',
 			},
 			details: [
 				'Enabled content discovery with search features',
@@ -64,5 +73,24 @@ export const resumeData = {
 			],
 		},
 	],
-	education: [],
+	education: [
+		{
+			title: {
+				product: 'App Academy',
+				detail: '',
+				link: '',
+			},
+			details: [
+				'1000 hour full stack web development curriculum, 3% acceptance rate',
+			],
+		},
+		{
+			title: {
+				product: 'Union College',
+				detail: '',
+				link: '',
+			},
+			details: ['BA major in economics'],
+		},
+	],
 };

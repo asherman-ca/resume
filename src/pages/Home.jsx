@@ -74,7 +74,7 @@ const Home = () => {
 					{resume.projects.map((project) => {
 						return (
 							<ResumeListItem
-								key={project.title}
+								key={project.title.product}
 								item={project}
 								itemShow={showProjects}
 							/>
@@ -85,12 +85,15 @@ const Home = () => {
 			<div className='section'>
 				<span className='title'>Education</span>
 				<div className='list edu-list'>
-					<div>
-						<span className='title'>App Academy</span>
-					</div>
-					<div>
-						<span className='title'>Union College</span>
-					</div>
+					{resume.education.map((edu) => {
+						return (
+							<ResumeListItem
+								key={edu.title.detail}
+								item={edu}
+								itemShow={true}
+							/>
+						);
+					})}
 				</div>
 			</div>
 		</div>
