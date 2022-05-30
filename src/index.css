@@ -13,10 +13,6 @@
 	--phone: rgb(37, 208, 66);
 	--email: rgb(66, 132, 243);
 	--email-light: rgb(66, 132, 243, 0.5);
-
-	/* --alt-grey: #7c8499; */
-	/* --light-grey: rgb(229, 232, 235); */
-	/* --clr-blue: rgb(32, 129, 226); */
 }
 
 *,
@@ -28,7 +24,6 @@
 a {
 	text-decoration: none;
 	display: block;
-	/* color: var(--clr-blk-button); */
 }
 
 body {
@@ -36,7 +31,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Ubuntu', sans-serif;
-	/* background-color: var(--bg-grey); */
 	background-color: white;
 	font-size: 1.25rem;
 }
