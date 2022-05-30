@@ -4,18 +4,23 @@
 @import './styles/Nav.css';
 
 :root {
-	--clr-grey: #81899d;
-	--alt-grey: #7c8499;
-	--bg-grey: #fafbfc;
-	--light-grey: rgb(229, 232, 235);
-
-	--clr-blue: rgb(32, 129, 226);
-
 	--clr-blk-button: rgba(4, 17, 29, 0.75);
+	--clr-grey: #81899d;
+	--bg-grey: #fafbfc;
+
+	/* --alt-grey: #7c8499; */
+	/* --light-grey: rgb(229, 232, 235); */
+	/* --clr-blue: rgb(32, 129, 226); */
 }
 
 * {
 	box-sizing: border-box !important;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	color: var(--clr-blk-button);
 }
 
 body {
@@ -24,7 +29,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Ubuntu', sans-serif;
 	background-color: var(--bg-grey);
-	font-size: 1rem;
+	font-size: 1.25rem;
 }
 
 #root {

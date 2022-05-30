@@ -1,15 +1,35 @@
+.resume-list-item {
+	/* font-size: 1rem; */
+}
+
+.resume-list-item .header {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	/* justify-content: space-between; */
+}
+
 .resume-list-item .details {
-	animation: fadeIn linear 1s;
+	animation: fadeIn linear 0.25s;
 	position: relative;
+}
+
+.resume-list-item i {
+	color: var(--clr-blk-button);
+}
+
+.resume-list-item i:hover {
+	cursor: pointer;
+	color: var(--clr-grey);
 }
 
 @keyframes fadeIn {
 	0% {
-		left: 25px;
+		top: -50px;
 		opacity: 0;
 	}
 	100% {
-		left: 0px;
+		top: 0px;
 		opacity: 1;
 	}
 }
