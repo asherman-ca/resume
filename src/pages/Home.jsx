@@ -3,13 +3,20 @@ import ResumeListItem from '../components/ResumeListItem';
 import { resumeData } from '../data/resume';
 
 const Home = () => {
-	const [resume, setResume] = useState();
+	const [resume, setResume] = useState([]);
 	const [showExperience, setShowExperience] = useState(true);
-	const [showProjects, setShowProjects] = useState(false);
+	const [showProjects, setShowProjects] = useState(true);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		console.log('data', resumeData);
 		setResume(resumeData);
-	}, []);
+		setLoading(false);
+	}, [resumeData]);
+
+	if (loading) {
+		return <div>loading</div>;
+	}
 
 	return (
 		<div className='home-container'>
@@ -30,7 +37,7 @@ const Home = () => {
 					Experience
 				</span>
 				<div className='list item-list'>
-					{resumeData.experience.map((job) => {
+					{resume.experience.map((job) => {
 						return (
 							<ResumeListItem
 								key={job.title}
@@ -55,7 +62,7 @@ const Home = () => {
 					Projects
 				</span>
 				<div className='list'>
-					{resumeData.projects.map((project) => {
+					{resume.projects.map((project) => {
 						return (
 							<ResumeListItem
 								key={project.title}
