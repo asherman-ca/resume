@@ -9,14 +9,7 @@ const ResumeListItem = ({ item, itemShow }) => {
 
 	return (
 		<div className='resume-list-item'>
-			<div className='header' onClick={() => setShow(!show)}>
-				<i
-					className={
-						show
-							? 'fa-solid fa-circle-chevron-down'
-							: 'fa-solid fa-circle-chevron-right'
-					}
-				/>
+			<div className='header'>
 				<span className='title'>{item.title}</span>
 			</div>
 			{show && <div className='details'>details</div>}

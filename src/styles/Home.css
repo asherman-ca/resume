@@ -54,3 +54,34 @@
 .home-container .section:nth-child(3) > .title:hover {
 	color: inherit;
 }
+
+.home-container i {
+	font-size: 1.5rem;
+	margin-right: 0.5rem;
+}
+
+.fa-chevron-right {
+	animation: twistUp linear 0.2s;
+}
+
+.fa-chevron-down {
+	animation: twistIn linear 0.2s;
+}
+
+@keyframes twistIn {
+	0% {
+		transform: rotate(-90deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes twistUp {
+	0% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
