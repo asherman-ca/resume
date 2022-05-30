@@ -17,14 +17,25 @@ const Nav = () => {
 					>
 						<i className='fa-brands fa-github-square'></i>
 					</a>
-					<span className='tooltip-text'>https://github.com/asherman-ca</span>
+					<span className='tooltip-text'>github.com/asherman-ca</span>
+				</div>
+				<div className='tooltip'>
+					<a
+						target='_blank'
+						rel='noopener noreferrer'
+						href='https://www.linkedin.com/in/alex-sherman-1ba03649'
+					>
+						<i className='fa-brands fa-linkedin'></i>
+					</a>
+					<span className='tooltip-text'>
+						linkedin.com/in/alex-sherman-1ba03649
+					</span>
 				</div>
 				<div className='tooltip'>
 					<i className='fa-solid fa-square-envelope'></i>
 					<span className='tooltip-text'>asherman.ca@gmail.com</span>
 				</div>
 				<div className='tooltip'>
-					{/* <i className='fa-solid fa-phone tooltip'></i> */}
 					<i className='fa-solid fa-square-phone'></i>
 					<span className='tooltip-text'>415.652.0317</span>
 				</div>

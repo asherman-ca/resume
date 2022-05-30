@@ -27,15 +27,10 @@
 	border: 1px solid var(--clr-grey);
 }
 
-.nav-container a:hover {
-	cursor: pointer;
-	color: var(--clr-grey);
-}
-
 .nav-container .links {
 	display: flex;
-	gap: 1rem;
-	color: var(--clr-blk-button);
+	gap: 0.5rem;
+	/* color: var(--clr-blk-button); */
 }
 
 .nav-container i {
@@ -94,10 +89,28 @@
 	animation: tooltipFadeIn ease 0.25s;
 } */
 
+.fa-github-square {
+	color: var(--clr-blk-button);
+}
+
 .fa-square-envelope {
-	color: rgb(66, 132, 243);
+	color: var(--email);
 }
 
 .fa-square-phone {
-	color: rgb(37, 208, 66);
+	color: var(--phone);
+}
+
+.fa-linkedin {
+	color: var(--linkedin);
+}
+
+.fa-github-square:hover {
+	cursor: pointer;
+	color: var(--clr-grey) !important;
+}
+
+.fa-linkedin:hover {
+	cursor: pointer;
+	color: var(--linkedin-light);
 }
