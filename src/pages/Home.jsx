@@ -31,19 +31,16 @@ const Home = () => {
 				>
 					Experience
 				</span>
-				<div className='list'>
-					{showExperience &&
-						resumeData.experience.map((job) => {
-							return (
-								<ResumeListItem key={job.title} item={job} itemShow={true} />
-							);
-						})}
-					{!showExperience &&
-						resumeData.experience.map((job) => {
-							return (
-								<ResumeListItem key={job.title} item={job} itemShow={false} />
-							);
-						})}
+				<div className='list item-list'>
+					{resumeData.experience.map((job) => {
+						return (
+							<ResumeListItem
+								key={job.title}
+								item={job}
+								itemShow={showExperience}
+							/>
+						);
+					})}
 				</div>
 			</div>
 			<div className='section'>
@@ -52,30 +49,27 @@ const Home = () => {
 					Projects
 				</span>
 				<div className='list'>
-					{showProjects &&
-						resumeData.projects.map((project) => {
-							return (
-								<ResumeListItem
-									key={project.title}
-									item={project}
-									itemShow={true}
-								/>
-							);
-						})}
-					{!showProjects &&
-						resumeData.projects.map((project) => {
-							return (
-								<ResumeListItem
-									key={project.title}
-									item={project}
-									itemShow={false}
-								/>
-							);
-						})}
+					{resumeData.projects.map((project) => {
+						return (
+							<ResumeListItem
+								key={project.title}
+								item={project}
+								itemShow={showProjects}
+							/>
+						);
+					})}
 				</div>
 			</div>
 			<div className='section'>
 				<span className='title'>Education</span>
+				<div className='list'>
+					<div>
+						<span>App Academy</span>
+					</div>
+					<div>
+						<span>Union College</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
