@@ -33,11 +33,10 @@
 
 	z-index: 1;
 	visibility: hidden;
-	/* background-color: var(--bg-grey); */
 	color: black;
-	padding: 0.5rem;
+	padding: 1rem;
 
-	font-size: 0.75rem;
+	font-size: 1rem;
 	border-radius: 0.25rem;
 }
 
