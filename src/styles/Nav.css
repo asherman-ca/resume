@@ -23,7 +23,7 @@
 .nav-container img {
 	width: 50px;
 	border-radius: 50%;
-	border: 2px solid var(--clr-blk-button);
+	border: 1px solid var(--clr-grey);
 }
 
 .nav-container a:hover {
@@ -66,4 +66,12 @@
 
 .tooltip:hover .tooltip-text {
 	visibility: visible;
+}
+
+.fa-square-envelope {
+	color: rgb(66, 132, 243);
+}
+
+.fa-square-phone {
+	color: rgb(37, 208, 66);
 }
