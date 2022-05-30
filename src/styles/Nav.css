@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 80px;
+	min-height: 90px;
 	/* height: calc(80px + 1rem); */
 
 	width: 90%;
@@ -15,9 +15,9 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	font-size: 1.75rem;
+	font-size: 2rem;
 	/* font-weight: bold; */
-	font-weight: 500;
+	/* font-weight: 400; */
 }
 
 .nav-container img {
@@ -40,7 +40,7 @@
 .tooltip-text {
 	position: absolute;
 	/* top: calc(80px + 1rem); */
-	top: 80px;
+	top: 90px;
 	right: 0;
 
 	z-index: 1;
@@ -64,7 +64,7 @@
 
 .tooltip-default {
 	position: absolute;
-	top: 80px;
+	top: 90px;
 	right: 0;
 
 	z-index: 1;

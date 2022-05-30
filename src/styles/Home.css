@@ -63,11 +63,11 @@
 }
 
 .fa-chevron-right {
-	animation: twistUp linear 0.2s;
+	animation: twistUp ease 0.15s;
 }
 
 .fa-chevron-down {
-	animation: twistIn linear 0.2s;
+	animation: twistIn ease 0.15s;
 }
 
 .edu-list {
