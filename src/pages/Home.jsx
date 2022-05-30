@@ -25,15 +25,32 @@ const Home = () => {
 		<div className='home-container'>
 			{console.log('resume', resume)}
 			<div className='section'>
-				<span className='title'>Experience</span>
-				<div className='list'></div>
+				<span
+					onClick={() => setShowExperience(!showExperience)}
+					className='title'
+				>
+					Experience
+				</span>
+				<div className='list'>
+					{showExperience &&
+						resumeData.experience.map((job) => {
+							return (
+								<ResumeListItem key={job.title} item={job} itemShow={true} />
+							);
+						})}
+					{!showExperience &&
+						resumeData.experience.map((job) => {
+							return (
+								<ResumeListItem key={job.title} item={job} itemShow={false} />
+							);
+						})}
+				</div>
 			</div>
 			<div className='section'>
 				{console.log('show projects', showProjects)}
-				<span className='title'>Projects</span>
-				<div className='button' onClick={() => setShowProjects(!showProjects)}>
-					button
-				</div>
+				<span onClick={() => setShowProjects(!showProjects)} className='title'>
+					Projects
+				</span>
 				<div className='list'>
 					{showProjects &&
 						resumeData.projects.map((project) => {

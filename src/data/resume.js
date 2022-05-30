@@ -1,5 +1,5 @@
 export const resumeData = {
-	experience: [],
+	experience: [{ title: 'Nurx' }, { title: 'Teacher' }],
 	projects: [
 		{ title: 'Tickr' },
 		{ title: 'Miyagi' },

@@ -4,10 +4,13 @@ const ResumeListItem = ({ item, itemShow }) => {
 	const [show, setShow] = useState(itemShow);
 	return (
 		<div className='resume-list-item'>
-			<div className='header'>
+			<div className='header' onClick={() => setShow(!show)}>
 				<i
-					onClick={() => setShow(!show)}
-					className={show ? 'fa-solid fa-folder-open' : 'fa-solid fa-folder'}
+					className={
+						show
+							? 'fa-solid fa-circle-chevron-down'
+							: 'fa-solid fa-circle-chevron-right'
+					}
 				/>
 				<span className='title'>{item.title}</span>
 			</div>
