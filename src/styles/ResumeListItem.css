@@ -7,11 +7,14 @@
 	align-items: center;
 	gap: 0.5rem;
 	/* justify-content: space-between; */
+	/* margin-bottom: 1rem; */
 }
 
 .resume-list-item .details {
 	animation: fadeIn linear 0.25s;
 	position: relative;
+
+	margin-top: 1rem;
 }
 
 .resume-list-item i {
