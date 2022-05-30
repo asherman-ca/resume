@@ -2,20 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ResumeListItem from '../components/ResumeListItem';
 import { resumeData } from '../data/resume';
 
-// const resumeData = {
-// 	experience: [],
-// 	projects: [
-// 		{ title: 'Tickr' },
-// 		{ title: 'Miyagi' },
-// 		{ title: 'MyOnlinePool' },
-// 	],
-// 	education: [],
-// };
-
 const Home = () => {
 	const [resume, setResume] = useState();
 	const [showExperience, setShowExperience] = useState(true);
-	const [showProjects, setShowProjects] = useState(true);
+	const [showProjects, setShowProjects] = useState(false);
 
 	useEffect(() => {
 		setResume(resumeData);

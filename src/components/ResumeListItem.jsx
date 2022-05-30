@@ -12,7 +12,14 @@ const ResumeListItem = ({ item, itemShow }) => {
 			<div className='header'>
 				<span className='title'>{item.title}</span>
 			</div>
-			{show && <div className='details'>details</div>}
+			{show && (
+				<div className='details'>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolorum
+					dolores officia. Impedit qui quisquam delectus rerum iusto voluptates!
+					Velit atque aliquid saepe repellendus delectus, harum totam sunt
+					similique laboriosam.
+				</div>
+			)}
 		</div>
 	);
 };
