@@ -21,7 +21,8 @@
 }
 
 .nav-container img {
-	width: 50px;
+	width: 60px;
+	padding: 2px;
 	border-radius: 50%;
 	border: 1px solid var(--clr-grey);
 }
@@ -50,9 +51,10 @@
 	z-index: 1;
 	visibility: hidden;
 	color: black;
-	padding: 0.5rem;
+	padding: 1rem;
 
 	font-size: 1rem;
+	font-weight: 500;
 	border-radius: 0.25rem;
 }
 
@@ -62,12 +64,42 @@
 
 .tooltip:hover .tooltip-text {
 	animation: tooltipFadeIn ease 0.25s;
-}
-
-.tooltip:hover .tooltip-text {
 	visibility: visible;
 }
 
+.tooltip-default {
+	position: absolute;
+	/* top: calc(80px + 1rem); */
+	top: 80px;
+	right: 0;
+
+	z-index: 1;
+	/* visibility: hidden; */
+	visibility: visible;
+	color: black;
+	padding: 1rem;
+
+	font-size: 1rem;
+	font-weight: 500;
+	border-radius: 0.25rem;
+}
+
+.links:hover .tooltip-default {
+	/* color: red; */
+	visibility: hidden;
+}
+
+.links:not(:hover) .tooltip-default {
+	animation: tooltipFadeIn ease 0.25s;
+}
+
+.tooltip-default:hover {
+	visibility: visible !important;
+}
+
+.tooltip-default:not(:hover) {
+	animation: none !important;
+}
 .fa-square-envelope {
 	color: rgb(66, 132, 243);
 }

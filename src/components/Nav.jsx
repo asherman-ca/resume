@@ -6,7 +6,7 @@ const Nav = () => {
 		<div className='nav-container'>
 			<div className='header'>
 				<img src={headShot} alt='' />
-				<span>Alex Sherman</span>
+				<span>Software Engineer</span>
 			</div>
 			<div className='links'>
 				<div className='tooltip'>
@@ -30,6 +30,7 @@ const Nav = () => {
 					<i className='fa-solid fa-square-phone'></i>
 					<span className='tooltip-text'>415.652.0317</span>
 				</div>
+				<span className='tooltip-default'>Alex Sherman</span>
 			</div>
 		</div>
 	);
