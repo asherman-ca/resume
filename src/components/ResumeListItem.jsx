@@ -10,14 +10,19 @@ const ResumeListItem = ({ item, itemShow }) => {
 	return (
 		<div className='resume-list-item'>
 			<div className='header'>
-				<span className='title'>{item.title}</span>
+				<span className='title'>{item.title.product}&nbsp;</span>
+				<span className='detail'>- {item.title.detail}</span>
+				{item.title.link && (
+					<a target='_blank' rel='noopener noreferrer' href={item.title.link}>
+						&nbsp;- <i className='fa-solid fa-arrow-up-right-from-square'></i>
+					</a>
+				)}
 			</div>
 			{show && (
 				<div className='details'>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolorum
-					dolores officia. Impedit qui quisquam delectus rerum iusto voluptates!
-					Velit atque aliquid saepe repellendus delectus, harum totam sunt
-					similique laboriosam.
+					{item.details.map((detail) => {
+						return <div>{detail}</div>;
+					})}
 				</div>
 			)}
 		</div>

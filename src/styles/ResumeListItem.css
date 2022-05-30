@@ -1,27 +1,45 @@
 .resume-list-item {
 	position: relative;
+	font-size: 1rem;
+}
+
+.resume-list-item i {
+	font-size: 1rem;
 }
 
 .resume-list-item .header {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+
+	font-weight: 500;
+}
+
+.resume-list-item .detail {
+	font-style: italic;
+}
+
+.resume-list-item i {
+	color: var(--clr-blk-button);
+}
+
+.resume-list-item i:hover {
+	color: var(--clr-grey);
 }
 
 .resume-list-item .details {
 	margin-top: 0.5rem;
 	position: relative;
 
-	animation: fadeIn ease 0.2s;
+	animation: fadeIn ease 0.5s;
 }
 
 @keyframes fadeIn {
 	0% {
-		top: -50px;
+		left: -50px;
 		opacity: 0;
 	}
 	100% {
-		top: 0px;
+		left: 0px;
 		opacity: 1;
 	}
 }

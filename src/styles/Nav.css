@@ -10,9 +10,18 @@
 	margin: 0 auto;
 }
 
-.nav-container > span {
-	font-size: 2rem;
+.nav-container .header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.5rem;
 	font-weight: bold;
+}
+
+.nav-container img {
+	width: 50px;
+	border-radius: 50%;
+	border: 2px solid var(--clr-blk-button);
 }
 
 .nav-container a:hover {
@@ -20,7 +29,7 @@
 	color: var(--clr-grey);
 }
 
-.nav-container > div {
+.nav-container .links {
 	display: flex;
 	gap: 2rem;
 	color: var(--clr-blk-button);
@@ -49,14 +58,9 @@
 }
 
 .tooltip:hover .tooltip-text {
-	visibility: visible;
+	animation: tooltipFadeIn ease 0.5s;
 }
 
-@keyframes bobUp {
-	0% {
-		top: 0px;
-	}
-	100% {
-		top: 25px;
-	}
+.tooltip:hover .tooltip-text {
+	visibility: visible;
 }

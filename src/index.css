@@ -40,3 +40,14 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+@keyframes tooltipFadeIn {
+	0% {
+		right: -25px;
+		opacity: 0;
+	}
+	100% {
+		right: 0px;
+		opacity: 1;
+	}
+}

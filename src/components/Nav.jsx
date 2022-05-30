@@ -1,10 +1,14 @@
 import React from 'react';
+import headShot from '../assets/headshot.jpeg';
 
 const Nav = () => {
 	return (
 		<div className='nav-container'>
-			<span>Alex Sherman</span>
-			<div>
+			<div className='header'>
+				<img src={headShot} alt='' />
+				<span>Alex Sherman</span>
+			</div>
+			<div className='links'>
 				<div className='tooltip'>
 					<a
 						href='https://github.com/asherman-ca'
@@ -23,9 +27,6 @@ const Nav = () => {
 					<i className='fa-solid fa-phone tooltip'></i>
 					<span className='tooltip-text'>415.652.0317</span>
 				</div>
-
-				{/* <span>asherman.ca@gmail.com</span> */}
-				{/* <span>415.652.0317</span> */}
 			</div>
 		</div>
 	);

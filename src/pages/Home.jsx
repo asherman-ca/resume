@@ -13,7 +13,6 @@ const Home = () => {
 
 	return (
 		<div className='home-container'>
-			{console.log('resume', resume)}
 			<div className='section'>
 				<span
 					onClick={() => setShowExperience(!showExperience)}
@@ -69,12 +68,12 @@ const Home = () => {
 			</div>
 			<div className='section'>
 				<span className='title'>Education</span>
-				<div className='list'>
+				<div className='list edu-list'>
 					<div>
-						<span>App Academy</span>
+						<span className='title'>App Academy</span>
 					</div>
 					<div>
-						<span>Union College</span>
+						<span className='title'>Union College</span>
 					</div>
 				</div>
 			</div>
