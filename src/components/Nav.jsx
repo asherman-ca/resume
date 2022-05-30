@@ -15,13 +15,11 @@ const Nav = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						{/* <i className='fa-brands fa-github' /> */}
 						<i className='fa-brands fa-github-square'></i>
 					</a>
 					<span className='tooltip-text'>https://github.com/asherman-ca</span>
 				</div>
 				<div className='tooltip'>
-					{/* <i className='fa-solid fa-envelope'></i> */}
 					<i className='fa-solid fa-square-envelope'></i>
 					<span className='tooltip-text'>asherman.ca@gmail.com</span>
 				</div>
