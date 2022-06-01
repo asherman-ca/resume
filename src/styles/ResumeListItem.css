@@ -18,7 +18,7 @@
 	text-overflow: ellipsis;
 }
 
-.resume-list-item .header span {
+.resume-list-item .header span:nth-child(2) {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;

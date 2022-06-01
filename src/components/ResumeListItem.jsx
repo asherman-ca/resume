@@ -10,9 +10,9 @@ const ResumeListItem = ({ item, itemShow }) => {
 	return (
 		<div className='resume-list-item'>
 			<div className='header'>
-				<span className='title'>{item.title.product},&nbsp;</span>
+				<span className='title'>{item.title.product}</span>
 				{item.title.detail && (
-					<span className='detail'>{item.title.detail}</span>
+					<span className='detail'>,&nbsp;{item.title.detail}</span>
 				)}
 				{item.title.link && (
 					<a target='_blank' rel='noopener noreferrer' href={item.title.link}>
