@@ -33,7 +33,7 @@ export const resumeData = {
 			id: 3,
 			title: {
 				product: 'Tickr',
-				detail: 'React, Firebase',
+				detail: '[React, Firebase]',
 				link: 'https://coin-ticker.vercel.app/',
 			},
 			details: [
@@ -47,7 +47,7 @@ export const resumeData = {
 			id: 4,
 			title: {
 				product: 'Miyagi',
-				detail: 'React, Firebase, Bootstrap',
+				detail: '[React, Firebase, Bootstrap]',
 				link: 'https://miyagi.tech/',
 			},
 			details: [
@@ -59,7 +59,11 @@ export const resumeData = {
 		},
 		{
 			id: 5,
-			title: { product: 'MyOnlinePool', detail: 'React, Rails, SQL', link: '' },
+			title: {
+				product: 'MyOnlinePool',
+				detail: '[React, Rails, SQL]',
+				link: '',
+			},
 			details: [
 				"Updated score data through queries to the NFL's api,",
 				'Processed payment through hand rolled PayPal implementation',
@@ -70,7 +74,7 @@ export const resumeData = {
 			id: 6,
 			title: {
 				product: 'Ez Streaming',
-				detail: 'React-Native, Firebase',
+				detail: '[React-Native, Firebase]',
 				link: '',
 			},
 			details: [
