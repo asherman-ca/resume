@@ -11,7 +11,7 @@ const Home = () => {
 	useEffect(() => {
 		setResume(resumeData);
 		setLoading(false);
-	}, [resumeData]);
+	}, []);
 
 	if (loading) {
 		return <div>loading</div>;
@@ -45,7 +45,7 @@ const Home = () => {
 					{resume.experience.map((job) => {
 						return (
 							<ResumeListItem
-								key={job.title}
+								key={job.id}
 								item={job}
 								itemShow={showExperience}
 							/>
@@ -74,7 +74,7 @@ const Home = () => {
 					{resume.projects.map((project) => {
 						return (
 							<ResumeListItem
-								key={project.title.product}
+								key={project.id}
 								item={project}
 								itemShow={showProjects}
 							/>
@@ -86,13 +86,7 @@ const Home = () => {
 				<span className='title'>Education</span>
 				<div className='list edu-list'>
 					{resume.education.map((edu) => {
-						return (
-							<ResumeListItem
-								key={edu.title.detail}
-								item={edu}
-								itemShow={true}
-							/>
-						);
+						return <ResumeListItem key={edu.id} item={edu} itemShow={true} />;
 					})}
 				</div>
 			</div>

@@ -24,7 +24,7 @@ const ResumeListItem = ({ item, itemShow }) => {
 				<div className='details'>
 					{item.details.map((detail) => {
 						return (
-							<div className='details-item'>
+							<div key={detail} className='details-item'>
 								<div>-&nbsp;</div>
 								<div>{detail}</div>
 							</div>

@@ -17,7 +17,7 @@
 	background-color: white;
 	border: 0.5px solid var(--clr-grey);
 
-	overflow-y: overlay;
+	/* overflow-y: overlay; */
 }
 
 .home-container .section .list {

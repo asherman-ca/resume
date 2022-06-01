@@ -12,6 +12,16 @@
 	align-items: center;
 
 	font-weight: 500;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.resume-list-item .header span {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .resume-list-item .detail {

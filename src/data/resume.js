@@ -1,6 +1,7 @@
 export const resumeData = {
 	experience: [
 		{
+			id: 1,
 			title: {
 				product: 'Nurx',
 				detail: 'Software Engineer',
@@ -14,6 +15,7 @@ export const resumeData = {
 			],
 		},
 		{
+			id: 2,
 			title: {
 				product: 'App Academy',
 				detail: 'Teaching Assistant',
@@ -28,6 +30,7 @@ export const resumeData = {
 	],
 	projects: [
 		{
+			id: 3,
 			title: {
 				product: 'Tickr',
 				detail: 'React, Firebase',
@@ -41,6 +44,7 @@ export const resumeData = {
 			],
 		},
 		{
+			id: 4,
 			title: {
 				product: 'Miyagi',
 				detail: 'React, Firebase, Bootstrap',
@@ -54,6 +58,7 @@ export const resumeData = {
 			],
 		},
 		{
+			id: 5,
 			title: { product: 'MyOnlinePool', detail: 'React, Rails, SQL', link: '' },
 			details: [
 				"Updated score data through queries to the NFL's api,",
@@ -62,6 +67,7 @@ export const resumeData = {
 			],
 		},
 		{
+			id: 6,
 			title: {
 				product: 'Ez Streaming',
 				detail: 'React-Native, Firebase',
@@ -75,6 +81,7 @@ export const resumeData = {
 	],
 	education: [
 		{
+			id: 7,
 			title: {
 				product: 'App Academy',
 				detail: '',
@@ -85,6 +92,7 @@ export const resumeData = {
 			],
 		},
 		{
+			id: 8,
 			title: {
 				product: 'Union College',
 				detail: '',
