@@ -34,7 +34,7 @@ export const resumeData = {
 			title: {
 				product: 'Tickr',
 				detail: '[React, Firebase, CoinGecko]',
-				link: 'https://coin-ticker.vercel.app/',
+				link: 'https://tickr2.vercel.app/',
 			},
 			details: [
 				'Integrated CoinGecko API and TradingView component',
