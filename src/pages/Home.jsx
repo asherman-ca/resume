@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import ResumeListItem from '../components/ResumeListItem';
-import { resumeData } from '../data/resume';
+import React, { useState, useEffect } from 'react'
+import ResumeListItem from '../components/ResumeListItem'
+import { resumeData } from '../data/resume'
 
 const Home = () => {
-	const [resume, setResume] = useState([]);
-	const [showExperience, setShowExperience] = useState(true);
-	const [showProjects, setShowProjects] = useState(false);
-	const [loading, setLoading] = useState(true);
+	const [resume, setResume] = useState([])
+	const [showExperience, setShowExperience] = useState(true)
+	const [showProjects, setShowProjects] = useState(false)
+	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
-		setResume(resumeData);
-		setLoading(false);
-	}, []);
+		setResume(resumeData)
+		setLoading(false)
+	}, [])
 
 	if (loading) {
-		return <div>loading</div>;
+		return <div>loading</div>
 	}
 
 	const onShowExperience = () => {
-		setShowExperience(!showExperience);
-		setShowProjects(!showProjects);
-	};
+		setShowExperience(!showExperience)
+		setShowProjects(!showProjects)
+	}
 
 	return (
 		<div className='home-container'>
@@ -49,7 +49,7 @@ const Home = () => {
 								item={job}
 								itemShow={showExperience}
 							/>
-						);
+						)
 					})}
 				</div>
 			</div>
@@ -78,20 +78,31 @@ const Home = () => {
 								item={project}
 								itemShow={showProjects}
 							/>
-						);
+						)
 					})}
 				</div>
 			</div>
+
+			<div className='section'>
+				<span className='title'>Skills</span>
+				<div className='list'>
+					<p className='skill-list'>
+						- Javascript, React, Next, Node, Express, SQL, NoSQL, Prisma,
+						GraphQL, CSS, Tailwind, Git
+					</p>
+				</div>
+			</div>
+
 			<div className='section'>
 				<span className='title'>Education</span>
 				<div className='list edu-list'>
 					{resume.education.map((edu) => {
-						return <ResumeListItem key={edu.id} item={edu} itemShow={true} />;
+						return <ResumeListItem key={edu.id} item={edu} itemShow={true} />
 					})}
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Home;
+export default Home
