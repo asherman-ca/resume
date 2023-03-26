@@ -87,7 +87,7 @@ const Home = () => {
 				<span className='title'>Skills</span>
 				<div className='list'>
 					<p className='skill-list'>
-						- Javascript, React, Next, Node, Express, SQL, NoSQL, Prisma,
+						- Javascript, React, Next, Express, SQL, NoSQL, Prisma, tRPC,
 						GraphQL, CSS, Tailwind, Git
 					</p>
 				</div>
