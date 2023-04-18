@@ -30,9 +30,25 @@ export const resumeData = {
 	],
 	projects: [
 		{
+			id: 9,
+			title: {
+				product: 'Tickr3',
+				detail: '[React, Next, Prisma, SQL, Tailwind, CoinGecko]',
+				link: 'https://tickr3.vercel.app/',
+			},
+			details: [
+				"Handrolled modern ui components while leveraging tailwind's utility classes",
+				'Used server side rendering to improve SEO and performance',
+				'Cached static data when possible to further improve performance',
+				'Integrated CoinGecko API and severless db provider (Railway)',
+				'Calculated realized and unrealized PNL stats using order history and live prices',
+				'Added like feature to easily track specific assets',
+			],
+		},
+		{
 			id: 3,
 			title: {
-				product: 'Tickr',
+				product: 'Tickr2',
 				detail: '[React, Firebase, CoinGecko]',
 				link: 'https://tickr2.vercel.app/',
 			},
@@ -106,4 +122,4 @@ export const resumeData = {
 			details: ['BA major in economics'],
 		},
 	],
-};
+}
